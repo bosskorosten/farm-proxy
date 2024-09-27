@@ -2,7 +2,6 @@
 FROM node:20.11-slim AS build-stage
 WORKDIR /usr/src/app
 COPY ./gui/package*.json ./
-RUN npm install --production
 COPY ./gui ./
 RUN npm run build
 
