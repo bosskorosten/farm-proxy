@@ -12,7 +12,7 @@ WORKDIR /usr/src/app
 COPY --from=build-stage /usr/src/app/build ./build
 
 # Убедитесь, что эти каталоги существуют, либо удалите строки, если они не нужны
-COPY ./config ./config
+
 COPY ./monitoring ./monitoring
 COPY ./.env ./.env
 
