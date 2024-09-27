@@ -20,6 +20,7 @@ COPY ./config/templates ./config/templates
 
 COPY ./monitoring ./monitoring
 COPY ./.env ./.env
+RUN mkdir -p /usr/src/app/config/templates
 
 # Устанавливаем переменную окружения
 ENV NODE_ENV=production
