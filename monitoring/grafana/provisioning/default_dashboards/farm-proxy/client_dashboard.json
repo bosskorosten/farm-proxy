@@ -1,0 +1,1674 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "prometheus",
+          "uid": "PABF2E7BD7AE7B0F4"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": 5,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 73,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "Version of Farm Proxy",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              },
+              "unit": "short"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 2,
+            "w": 12,
+            "x": 0,
+            "y": 1
+          },
+          "id": 51,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "center",
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "text": {
+              "titleSize": 1,
+              "valueSize": 14
+            },
+            "textMode": "name"
+          },
+          "pluginVersion": "9.5.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "exemplar": true,
+              "expr": "FP_application_version_details",
+              "hide": false,
+              "interval": "",
+              "legendFormat": "Version: {{version_full}}",
+              "refId": "B"
+            }
+          ],
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 12,
+            "x": 12,
+            "y": 1
+          },
+          "id": 62,
+          "options": {
+            "code": {
+              "language": "plaintext",
+              "showLineNumbers": false,
+              "showMiniMap": false
+            },
+            "content": "<table width=\"100%\" style:\" border: none !important; table-layout: fixed; \" id=\"bps-table\">\n<tr>\n<td style=\"text-align: center; padding: 10px 0; width:50%;\"><a href=\"https://braiins.com/os/plus?utm_source=Grafana&utm_medium=Dashboard_panel\"  target=\"_blank\"><img src=\"https://design.braiins.com/assets/img/logos/braiins-os-logo-white-rgb.svg?h=d916fefc6e6db6f767d1c8ee4c384270\" height=\"25px\" align=\"center\"></a></td>\n<td style=\"text-align: center; padding: 10px 0; width:50%;\"><a href=\"https://braiins.com/pool\"  target=\"_blank\"><img src=\"https://braiins.visualbook.pro/assets/img/logos/braiins-pool-logo-reverse-rgb.svg\" height=\"25px\"></a></td>\n</tr>\n<tr>\n<td style=\"text-align: center; padding: 10px 0;\"><a href=\"https://braiins.com/manager?utm_source=Grafana&utm_medium=Dashboard_panel\"  target=\"_blank\" style=\"display:block\"><img src=\"https://design.braiins.com/assets/img/logos/White/braiins-manager-logo-white-rgb.svg?h=d15f53cda7c1dea472278ae4a0606849\" height=\"25px\"></a></td>\n<td style=\"text-align: center; padding: 10px 0;\"><a href=\"https://insights.braiins.com/?utm_source=Grafana&utm_medium=Dashboard_panel\"  target=\"_blank\" style=\"display:block\"><img src=\"https://design.braiins.com/assets/img/logos/braiins-insights-logo-on-dark-background-rgb.svg?h=aad9d059abab45e38f162e05c1fa322f\" height=\"17px\"></a></td>\n</tr>\n<tr>\n<td style=\"text-align: center; padding: 10px 0;\" colspan=\"2\"><a href=\"https://braiins.com/farm-proxy/?utm_source=Grafana&utm_medium=Dashboard_panel\"  target=\"_blank\" style=\"display:block\"><img src=\"https://design.braiins.com/assets/img/logos/farm-proxy-logo-white-rgb.svg?h=3e5188e1d46f58ccb0b910c6f8184b9b\" height=\"30px\"></a></td>\n</tr>\n</table>",
+            "mode": "markdown"
+          },
+          "pluginVersion": "9.5.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "refId": "A"
+            }
+          ],
+          "title": "Braiins Product Stack",
+          "type": "text"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "Most recent Farm Proxy start date",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              },
+              "unit": "d"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 12,
+            "x": 0,
+            "y": 3
+          },
+          "id": 72,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "center",
+            "orientation": "horizontal",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "/^certificate expires in:$/",
+              "values": false
+            },
+            "text": {
+              "titleSize": 14,
+              "valueSize": 14
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "9.5.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "editorMode": "code",
+              "exemplar": false,
+              "expr": "FP_remaining_certificate_validity_days - (time() - FP_remaining_certificate_validity_check_ts) / 86400",
+              "hide": false,
+              "instant": false,
+              "interval": "",
+              "legendFormat": "certificate expires in:",
+              "range": true,
+              "refId": "B"
+            }
+          ],
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "Most recent Farm Proxy start date",
+          "fieldConfig": {
+            "defaults": {
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              },
+              "unit": "dateTimeAsLocal"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 1,
+            "w": 12,
+            "x": 0,
+            "y": 4
+          },
+          "id": 55,
+          "options": {
+            "colorMode": "value",
+            "graphMode": "none",
+            "justifyMode": "center",
+            "orientation": "vertical",
+            "reduceOptions": {
+              "calcs": [
+                "last"
+              ],
+              "fields": "/^started at:$/",
+              "values": false
+            },
+            "text": {
+              "titleSize": 14,
+              "valueSize": 14
+            },
+            "textMode": "auto"
+          },
+          "pluginVersion": "9.5.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "exemplar": true,
+              "expr": "FP_start_time_ms",
+              "hide": false,
+              "interval": "",
+              "legendFormat": "started at:",
+              "refId": "B"
+            },
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "exemplar": true,
+              "expr": "",
+              "hide": false,
+              "interval": "",
+              "legendFormat": "",
+              "refId": "A"
+            }
+          ],
+          "type": "stat"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "",
+          "gridPos": {
+            "h": 2,
+            "w": 12,
+            "x": 0,
+            "y": 5
+          },
+          "id": 64,
+          "options": {
+            "code": {
+              "language": "plaintext",
+              "showLineNumbers": false,
+              "showMiniMap": false
+            },
+            "content": "Full documentation is available in the <a href=\"https://academy.braiins.com/en/farm-proxy/about\" target=\"_blank\">Braiins Academy</a> website",
+            "mode": "markdown"
+          },
+          "pluginVersion": "9.5.1",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "refId": "A"
+            }
+          ],
+          "title": "Documentation",
+          "type": "text"
+        }
+      ],
+      "title": "Instance information",
+      "type": "row"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 1
+      },
+      "id": 74,
+      "panels": [],
+      "title": "Dashboard",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Hashrate received from miners.",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          },
+          "unit": "GHs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 0,
+        "y": 2
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 16
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"down\", category=~\"$type\"}[5m]) * 4.294967296)",
+          "interval": "",
+          "legendFormat": "5min HR",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"down\", category=~\"$type\"}[1h]) * 4.294967296)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "1hr HR",
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"down\", category=~\"$type\"}[24h]) * 4.294967296)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "24hr HR",
+          "refId": "C"
+        }
+      ],
+      "title": "Downstream hashrate",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Hashrate sent to target pool(s).",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "GHs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 6,
+        "y": 2
+      },
+      "id": 45,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 16
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"up\", category=~\"$type\"}[5m]) * 4.294967296)",
+          "interval": "",
+          "legendFormat": "5min HR",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"up\", category=~\"$type\"}[1h]) * 4.294967296)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "1hr HR",
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"up\",  category=~\"$type\"}[24h]) * 4.294967296)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "24hr HR",
+          "refId": "C"
+        }
+      ],
+      "title": "Upstream hashrate",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Count of currently connected miners by hashrate type",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 12,
+        "y": 2
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 18
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_subscription_size_to_target_total{goal!=\"#!!ii-DevFee\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "standard",
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_subscription_size_to_target_total{goal=\"#!!ii-DevFee\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "devfee",
+          "refId": "C"
+        }
+      ],
+      "title": "Downstream connections",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Count of connections to target pool(s) by hashrate type",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 18,
+        "y": 2
+      },
+      "id": 44,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 18
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_connections_by_target{goal!=\"#!!ii-DevFee\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "standard",
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_connections_by_target{goal=\"#!!ii-DevFee\"})",
+          "interval": "",
+          "legendFormat": "devfee",
+          "refId": "A"
+        }
+      ],
+      "title": "Upstream connections",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Shares received from miners",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 2,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              }
+            ]
+          },
+          "unit": "locale"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Invalid ratio"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 0.0025
+                    },
+                    {
+                      "color": "red",
+                      "value": 0.005
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 0,
+        "y": 5
+      },
+      "id": 46,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 16
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_accepted_shares{direction=\"down\", category=~\"$type\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Accepted",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "editorMode": "code",
+          "exemplar": true,
+          "expr": "sum(FP_rejected_shares{direction=\"down\", category=~\"$type\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Invalid",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "name": "Expression",
+            "type": "__expr__",
+            "uid": "__expr__"
+          },
+          "expression": "$B/($A+$B)",
+          "hide": false,
+          "refId": "Invalid ratio",
+          "type": "math"
+        }
+      ],
+      "title": "Downstream shares",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Shares sent to target pool(s).",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 2,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "locale"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Invalid ratio"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 0.0025
+                    },
+                    {
+                      "color": "red",
+                      "value": 0.005
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 6,
+        "x": 6,
+        "y": 5
+      },
+      "id": 48,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 16
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(FP_accepted_shares{direction=\"up\", category=~\"$type\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Accepted",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "editorMode": "code",
+          "exemplar": true,
+          "expr": "sum(FP_rejected_shares{direction=\"up\",category=~\"$type\"})",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Invalid",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "name": "Expression",
+            "type": "__expr__",
+            "uid": "__expr__"
+          },
+          "expression": "$B/($A+$B)",
+          "hide": false,
+          "refId": "Invalid ratio",
+          "type": "math"
+        }
+      ],
+      "title": "Upstream shares",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 5
+      },
+      "id": 75,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "editorMode": "code",
+          "expr": "sum(FP_subscription_size_to_target_total{goal!=\"#!!ii-DevFee\"})",
+          "hide": false,
+          "legendFormat": "Standard",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "editorMode": "code",
+          "expr": "sum(FP_subscription_size_to_target_total{goal=\"#!!ii-DevFee\"})",
+          "hide": false,
+          "legendFormat": "Devfee",
+          "range": true,
+          "refId": "B"
+        }
+      ],
+      "title": "Connected miners",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Hashrate received from miners",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "GHs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "8.4.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"down\", category=~\"$type\"}[5m]) * 4.294967296) by (category)",
+          "interval": "",
+          "legendFormat": "{{category}} hashrate (accepted)",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_rejected_shares{direction=\"down\", category=~\"$type\"}[1m]) * 4.294967296) by (category)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{category}} hashrate (invalid)",
+          "refId": "B"
+        }
+      ],
+      "title": "Downstream hashrate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Theoretical aggregation based on ratio of upstream and downstream connections. Theoretical means the real aggregation can be lower due to network events (e.g. reconnections or job resets).",
+      "fieldConfig": {
+        "defaults": {
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 2,
+        "w": 12,
+        "x": 12,
+        "y": 12
+      },
+      "id": 53,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "vertical",
+        "reduceOptions": {
+          "calcs": [
+            "last"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "text": {
+          "titleSize": 14,
+          "valueSize": 18
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.5.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "clamp_min(100 - (sum(FP_connections_by_target{goal!=\"#!!ii-DevFee\"}) / sum(FP_subscription_size_to_target_total{goal!=\"#!!ii-DevFee\"})) * 100, 0)",
+          "interval": "",
+          "legendFormat": "Standard HR",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "clamp_min(100 - (sum(FP_connections_by_target{goal=\"#!!ii-DevFee\"}) / sum(FP_subscription_size_to_target_total{goal=\"#!!ii-DevFee\"})) * 100, 0)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Devfee HR",
+          "refId": "B"
+        }
+      ],
+      "title": "Aggregation",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "Hashrate sent to target pool(s)",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": true,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "purple",
+                "value": null
+              }
+            ]
+          },
+          "unit": "GHs"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "id": 50,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "8.4.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_accepted_shares{direction=\"up\", category=~\"$type\"}[5m]) * 4.294967296) by (category)",
+          "interval": "",
+          "legendFormat": "{{category}} hashrate (accepted)",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "sum(rate(FP_rejected_shares{direction=\"up\", category=~\"$type\"}[1m]) * 4.294967296) by (category)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "{{category}} hashrate (invalid)",
+          "refId": "D"
+        }
+      ],
+      "title": "Upstream hashrate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "description": "History of theoretical aggregation",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "percent"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "id": 54,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "8.4.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "clamp_min(100 - (sum(FP_connections_by_target{goal!=\"#!!ii-DevFee\"}) / sum(FP_subscription_size_to_target_total{goal!=\"#!!ii-DevFee\"})) * 100, 0)",
+          "interval": "",
+          "legendFormat": "Standard HR",
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "exemplar": true,
+          "expr": "clamp_min(100 - (sum(FP_connections_by_target{goal=\"#!!ii-DevFee\"}) / sum(FP_subscription_size_to_target_total{goal=\"#!!ii-DevFee\"})) * 100, 0)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "Devfee HR",
+          "refId": "B"
+        }
+      ],
+      "title": "Aggregation history",
+      "type": "timeseries"
+    },
+    {
+      "collapsed": true,
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 20
+      },
+      "id": 68,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "Overview of Brains OS+ licenses on devices connected to the Farm Proxy.",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "axisCenteredZero": false,
+                "axisColorMode": "text",
+                "axisLabel": "",
+                "axisPlacement": "auto",
+                "barAlignment": 0,
+                "drawStyle": "line",
+                "fillOpacity": 0,
+                "gradientMode": "none",
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                },
+                "lineInterpolation": "linear",
+                "lineWidth": 1,
+                "pointSize": 5,
+                "scaleDistribution": {
+                  "type": "linear"
+                },
+                "showPoints": "auto",
+                "spanNulls": false,
+                "stacking": {
+                  "group": "A",
+                  "mode": "none"
+                },
+                "thresholdsStyle": {
+                  "mode": "off"
+                }
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green"
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 27
+          },
+          "id": 70,
+          "options": {
+            "legend": {
+              "calcs": [],
+              "displayMode": "list",
+              "placement": "right",
+              "showLegend": true
+            },
+            "tooltip": {
+              "mode": "multi",
+              "sort": "none"
+            }
+          },
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "exemplar": true,
+              "expr": "FP_license_prov_license_counts_by_state>0",
+              "interval": "",
+              "legendFormat": "{{contract_name}} ({{license_state}})",
+              "refId": "A"
+            }
+          ],
+          "type": "timeseries"
+        }
+      ],
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "BOS+ licenses",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PABF2E7BD7AE7B0F4"
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 57,
+      "panels": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "description": "Split of standard hashrate among targets (IP addresses behind pool URL).",
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "palette-classic"
+              },
+              "custom": {
+                "hideFrom": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": false
+                }
+              },
+              "mappings": [],
+              "unit": "none"
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 9,
+            "w": 12,
+            "x": 0,
+            "y": 28
+          },
+          "id": 60,
+          "options": {
+            "displayLabels": [
+              "percent"
+            ],
+            "legend": {
+              "displayMode": "list",
+              "placement": "right",
+              "showLegend": true,
+              "values": [
+                "percent"
+              ]
+            },
+            "pieType": "pie",
+            "reduceOptions": {
+              "calcs": [
+                "lastNotNull"
+              ],
+              "fields": "",
+              "values": false
+            },
+            "tooltip": {
+              "mode": "single",
+              "sort": "none"
+            }
+          },
+          "pluginVersion": "8.4.0",
+          "targets": [
+            {
+              "datasource": {
+                "type": "prometheus",
+                "uid": "PABF2E7BD7AE7B0F4"
+              },
+              "editorMode": "code",
+              "exemplar": true,
+              "expr": "sum(rate(FP_accepted_shares{direction=\"up\", category=\"standard\"}[5m])) by (target)",
+              "interval": "",
+              "legendFormat": "{{target}}",
+              "range": true,
+              "refId": "A"
+            }
+          ],
+          "title": "Split among targets",
+          "type": "piechart"
+        }
+      ],
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "PABF2E7BD7AE7B0F4"
+          },
+          "refId": "A"
+        }
+      ],
+      "title": "Hashrate split",
+      "type": "row"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": ".*",
+        "current": {
+          "selected": true,
+          "text": "standard",
+          "value": "standard"
+        },
+        "hide": 0,
+        "includeAll": true,
+        "label": "Hashrate type",
+        "multi": false,
+        "name": "type",
+        "options": [
+          {
+            "selected": false,
+            "text": "All",
+            "value": "$__all"
+          },
+          {
+            "selected": true,
+            "text": "standard",
+            "value": "standard"
+          },
+          {
+            "selected": false,
+            "text": "devfee",
+            "value": "devfee"
+          }
+        ],
+        "query": "standard,devfee",
+        "queryValue": "",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Farm Proxy Dashboard",
+  "uid": "e6d3fadf-ed17-495b-8b4b-46c6bbbe28b8",
+  "version": 2,
+  "weekStart": ""
+}
