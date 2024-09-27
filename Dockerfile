@@ -16,6 +16,7 @@ WORKDIR /usr/src/app
 COPY --from=build-stage /usr/src/app/build ./build
 
 # Копируем конфигурационные файлы и шаблоны
+COPY ./config/templates ./config/templates
 
 COPY ./monitoring ./monitoring
 COPY ./.env ./.env
