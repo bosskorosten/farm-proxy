@@ -3,7 +3,7 @@ FROM node:20.11-slim AS build-stage
 WORKDIR /usr/src/app
 COPY ./gui/package*.json ./
 COPY ./gui ./
-RUN npm run build
+
 
 # Stage 2: Final image for the farm-proxy-gui
 FROM node:20.11-slim
